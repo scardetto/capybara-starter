@@ -15,7 +15,7 @@ end
 driver = :poltergeist
 
 # Determine the driver based on ENV var
-case (ENV['RUNNER'] && ENV['RUNNER'].upcase)
+case (ENV['DRIVER'] && ENV['DRIVER'].upcase)
 when 'FIREFOX', 'FF'
   driver = :selenium
 when 'CHROME'
