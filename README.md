@@ -1,11 +1,19 @@
 # Capybara Starter Project
 This project provides a starting point for creating acceptance tests for web applications using Capybara and RSpec in a standalone application. It also includes a set of simple tests for logging into BitBucket.org.
 
-## Getting Started
-To run this project you must have Ruby installed.  Once that's done, run the
-following:
+## Prerequisites
+To run the acceptance suite you must have the following installed:
 
-    bundle install        # This will install the dependencies.
+* Ruby 2.1 or higher
+* One of the following WebDrivers:
+  * [PhantomJS](http://phantomjs.org/)
+  * [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+  * [Chrome WebDriver](ihttps://sites.google.com/a/chromium.org/chromedriver/)
+
+## Getting Started
+Install the dependencies:
+
+    bundle install
 
 ### Configuration
 This project uses environment variables as the configuration source. The
@@ -15,7 +23,7 @@ following environment variables are required to run the example test suite.
   * CHROME - Uses the Chrome WebDriver
   * FF, FIREFOX - Uses the Firefox WebDriver
   * PHANTOMJS - Uses the Poltergeist WebDriver for PhantomJS
-* USER_NAME - Your BitBucket user name.
+* USER\_NAME - Your BitBucket user name.
 * PASSWORD - Your BitBucket password.
 
 It's recommended that you specify your environment variables in a configuration file. To do this:
@@ -60,3 +68,8 @@ RSpec.configure do |config|
   config.include MySteps, :type => :feature
 end
 ```
+
+## Additional Resources
+* [Capybara](https://github.com/jnicklas/capybara)
+* [Capybara Cheat Sheet](https://learn.thoughtbot.com/test-driven-rails-resources/capybara.pdf)
+* [Simple Tricks to Clean Up Your Capybara Tests](http://www.elabs.se/blog/51-simple-tricks-to-clean-up-your-capybara-tests)
