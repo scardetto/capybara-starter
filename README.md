@@ -8,7 +8,7 @@ To run the acceptance suite you must have the following installed:
 * One of the following WebDrivers:
   * [PhantomJS](http://phantomjs.org/)
   * [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-  * [Chrome WebDriver](ihttps://sites.google.com/a/chromium.org/chromedriver/)
+  * [Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/)
 
 ## Getting Started
 Install the dependencies:
