@@ -11,11 +11,11 @@ following:
 This project uses environment variables as the configuration source. The
 following environment variables are required to run the example test suite.
 
-* RUNNER - The web driver to use to run the tests. Valid values are:
+* DRIVER - The web driver to use to run the tests. Valid values are:
   * CHROME - Uses the Chrome WebDriver
   * FF, FIREFOX - Uses the Firefox WebDriver
   * PHANTOMJS - Uses the Poltergeist WebDriver for PhantomJS
-* USERNAME - Your BitBucket user name.
+* USER_NAME - Your BitBucket user name.
 * PASSWORD - Your BitBucket password.
 
 It's recommended that you specify your environment variables in a configuration file. To do this:
@@ -23,8 +23,8 @@ It's recommended that you specify your environment variables in a configuration 
 * Create a `.env` file in the root of your project.
 * Add your settings to that file as like so:
 
-        RUNNER=CHROME
-        USERNAME=<<Your BitBucket Username>>
+        DRIVER=CHROME
+        USER_NAME=<<Your BitBucket Username>>
         PASSWORD=<<Your BitBucket Password>>
 
 Now you can run the suite with:

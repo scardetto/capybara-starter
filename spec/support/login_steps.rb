@@ -12,7 +12,7 @@ module LoginSteps
   end
 
   def good_user
-    OpenStruct.new username: ENV['USERNAME'], password: ENV['PASSWORD']
+    OpenStruct.new username: ENV['USER_NAME'], password: ENV['PASSWORD']
   end
 
   def bad_user

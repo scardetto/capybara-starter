@@ -3,7 +3,7 @@ feature 'logging into bitbucket.org', :type => :feature do
     visit 'https://bitbucket.org/account/signin/'
 
     within('#log-in-container') do
-      fill_in 'Username or email', with: ENV['USERNAME']
+      fill_in 'Username or email', with: ENV['USER_NAME']
       fill_in 'Password', with: ENV['PASSWORD']
     end
 
