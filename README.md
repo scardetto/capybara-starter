@@ -16,8 +16,7 @@ Install the dependencies:
     bundle install
 
 ### Configuration
-This project uses environment variables as the configuration source. The
-following environment variables are required to run the example test suite.
+This project uses environment variables as the configuration source. The following environment variables are required to run the example test suite.
 
 * `DRIVER` - The web driver to use to run the tests. Valid values are:
   * `CHROME` - Uses the Chrome WebDriver
@@ -52,10 +51,7 @@ The test cases are implemented in two ways.
   cleaner, more expressive syntax that avoids duplication.
 
 ## Support Files
-This starter includes some helper methods that can be included in your tests.
-These files are located in the `spec/support` directory.  Any additional files added to this
-directory will automatically be included in your tests. However you must
-manually register the module with RSpec like so:
+This starter includes some helper methods that can be included in your tests. These files are located in the `spec/support` directory.  Any additional files added to this directory will automatically be included in your tests. However you must manually register the module with RSpec like so:
 
 ```ruby
 module MySteps
