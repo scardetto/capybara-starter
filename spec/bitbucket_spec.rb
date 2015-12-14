@@ -1,4 +1,4 @@
-feature 'logging into bitbucket.org', :type => :feature do
+feature 'logging into bitbucket.org' do
   scenario 'take me to the dashboard when providing good credentials' do
     visit 'https://bitbucket.org/account/signin/'
 
