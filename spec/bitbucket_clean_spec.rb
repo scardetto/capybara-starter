@@ -6,6 +6,6 @@ feature 'logging into bitbucket.org (CLEAN)' do
 
   scenario 'display error when invalid credentials are provided' do
     log_in_with bad_user
-    expect(page).to have_error 'Invalid username/email or password.'
+    expect(page).to have_content 'The email address or password you entered is incorrect.'
   end
 end

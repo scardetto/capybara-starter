@@ -8,7 +8,7 @@ module LoginSteps
   end
 
   def login_form
-    find('#log-in-container')
+    find('#aid-login-form')
   end
 
   def good_user
@@ -27,16 +27,11 @@ module LoginSteps
     ensure_on sign_in_path
 
     within login_form do
-      fill_in 'Username or email', with: user.username
+      fill_in 'Email', with: user.username
       fill_in 'Password', with: user.password
     end
 
     click_button 'Log in'
-  end
-
-  matcher :have_error do |text|
-    match { |node| node.has_selector?("div.error", :text => text) }
-    match_when_negated { |node| node.has_no_selector?("div.error", :text => text) }
   end
 end
 
