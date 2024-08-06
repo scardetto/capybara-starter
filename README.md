@@ -8,17 +8,6 @@ Install the dependencies:
 
     bundle install
 
-### Configuration
-
-It's recommended that you specify your environment variables in a configuration file. To do this:
-
-- Create a `.env` file in the root of your project.
-- Add your settings to that file as like so:
-
-        DRIVER=CHROME
-        USER_NAME=<<Your BitBucket Username>>
-        PASSWORD=<<Your BitBucket Password>>
-
 ## Running the Specs
 
 You can run the suite with:
